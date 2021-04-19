@@ -63,10 +63,21 @@ header {
 
 .menu__item a:hover{
     color: #a11c48;
+    text-decoration: underline;
 }
 
 main {
     padding-top: 100px;
+}
+
+#hit:before,
+#about-us:before,
+#advantage:before {
+    content: url(../img/decor.png);
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .promo{
@@ -74,6 +85,7 @@ main {
     height: 500px;
     position: relative;
     padding: 50px 0;
+    height: 600px;
 }
 
 .promo::after{
@@ -157,7 +169,8 @@ input:invalid:not(:placeholder-shown) {
 }
 
 #hit {
-    padding: 50px 0;
+    padding: 100px 0 50px;
+    position: relative;
 }
 
 .slider-container {
@@ -233,7 +246,8 @@ input:invalid:not(:placeholder-shown) {
 }
 
 #about-us {
-    padding: 50px 0;
+    padding: 100px 0 50px;
+    position: relative;
 }
 
 .about p {
@@ -274,7 +288,8 @@ input:invalid:not(:placeholder-shown) {
 }
 
 #advantage {
-    padding: 50px 0;
+    padding: 100px 0 50px;
+    position: relative;
 }
 
 .accordion {
@@ -373,7 +388,7 @@ footer {
   
 .progress-item{
     position: relative;
-    z-index: 999;
+    z-index: 1;
     margin-bottom: calc(-100vh + 6px);
 }
 
