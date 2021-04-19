@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #a11c48;
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(45deg, #fff, #f5d7df);
+    padding: 10px 0;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    width: 1165px;
+    margin: 0 auto;
+}
+
+.logo__img{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.logo__title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #222528;
+    margin-left: 10px;
+}
+
+.menu__item{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.menu__item:last-child{
+    margin-right: 0;
+}
+
+.menu__item a{
+    text-decoration: none;
+    color: #222528;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.menu__item a:hover{
+    color: #a11c48;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.promo{
+    background: url(../img/foto_bg.jpg) center center/cover no-repeat;
+    height: 500px;
+    position: relative;
+    padding: 50px 0;
+}
+
+.promo::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(255, 255, 255, .5);
+}
+
+.promo-item{
+    margin-left: 50px;
+    position: absolute;
+    z-index: 15;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 400;
+    color: #222528;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: #222528;
+    text-align: center;
+}
+
+.promo-item p{
+    margin-top: 20px;
+    color: #222528;
+}
+
+.form {
+    text-align:  center;
+    margin-top: 20px;
+    background: #fff;
+    width: 250px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #000;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #313233;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 1px dotted red;
+}
+
+.btn {
+    border: none;
+    background: linear-gradient(180deg, #f5d7df, #e2b9c4);
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+    cursor: pointer;
+    color: #313233;
+    margin: 0 15px;
+}
+
+.btn:hover {
+    border-radius: 50%;
+    transition: .3s;
+}
+
+#hit {
+    padding: 50px 0;
+}
+
+.slider-container {
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+}
+
+.hit-item{
+    position: relative;
+}
+
+.sliders {
+    display: flex;
+    
+    transition: all 2s;
+}
+
+.slider-item {
+    width: 277px;
+    height: 277px;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.slider-item img {
+    box-shadow: 3px 3px 3px #313233;
+    opacity: .7;
+    transition: .5s;
+}
+
+.slider-item img:hover {
+    opacity: 1;
+}
+
+#arrow_next label, 
+#arrow_prev label{
+    font-size: 36px;
+    visibility: hidden;
+}
+.slider-container input {
+    visibility: hidden;
+}
+
+#img_1:checked ~ #arrow_next label:nth-child(2),
+#img_2:checked ~ #arrow_next label:nth-child(3),
+#img_3:checked ~ #arrow_next label:nth-child(1) {
+    position: absolute;
+    top: 40%;
+    right: 50px;
+    visibility: visible;
+}
+
+#img_1:checked ~ #arrow_prev label:nth-child(3),
+#img_2:checked ~ #arrow_prev label:nth-child(1),
+#img_3:checked ~ #arrow_prev label:nth-child(2){
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    visibility: visible;
+}
+
+#img_1:checked ~ .sliders .slider-item {
+    transform: translateX();
+}
+
+#img_2:checked ~ .sliders {
+    transform: translateX(-971px);
+}
+
+#img_3:checked ~ .sliders{
+    transform: translateX(-1946px);
+}
+
+#about-us {
+    padding: 50px 0;
+}
+
+.about p {
+    margin-top: 20px;
+    color: #313233;
+}
+
+.about-info {
+    margin-top: 20px;
+    display: flex;
+}
+
+.about-info ul {
+    margin-left: 50px;
+}
+
+.about-info ul li{
+    list-style: none;
+    font-size: 18px;
+    color: #313233;
+    line-height: 1.5em;
+    position: relative;
+    font-weight: 400;
+}
+
+.about-info ul li::before {
+    content: url(../img/icons/check_red.svg);
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: -32px;
+    width: 21px;
+    height: 20px;
+}
+
+.about-info img {
+    box-shadow: 0 0 3px #313233;
+}
+
+#advantage {
+    padding: 50px 0;
+}
+
+.accordion {
+    display: flex;
+    overflow: hidden;
+    margin: 30px auto;
+    width: 800px;
+    height: 200px;
+}
+
+.accordion-item {
+    display: flex;
+}
+
+.accordion-item:first-child {
+    background-color: rgb(241, 162, 162);
+}
+
+.accordion-item:nth-last-child(2) {
+    background-color: rgb(201, 247, 175);
+}
+
+.accordion-item:nth-last-child(3) {
+    background-color: rgb(160, 179, 241);
+}
+
+.accordion-item:last-child {
+    background-color: rgb(240, 237, 101);
+}
+
+.accordion label {
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    font-weight: 700;
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+}
+
+.accordion label span {
+    transform: rotate(270deg);
+}
+
+.accordion-item input{
+    visibility:hidden;
+}
+
+.accordion-item input ~ article {
+    display: none;
+}
+
+
+.accordion-item input:checked ~ article {
+    display: block;
+}
+
+.accordion-item article {
+    padding: 5px;
+    font-size: 12px;
+}
+
+footer {
+    background: linear-gradient(45deg, #fff, #f5d7df);
+    padding: 10px 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.progress {
+    position: relative;
+    padding-top: 0;
+}
+  
+.progress:before {
+    content: "";
+    display: block;
+    background: linear-gradient(to right top, #CDDC39 0%, #03A9F4 50%, #e6f0f5 50%);
+    height: calc(100% - 100vh + 6px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress:after {
+    content: "";
+    display: block;
+    background: #fff;
+    height: calc(100vh - 6px);
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+}
+  
+.progress-item{
+    position: relative;
+    z-index: 999;
+    margin-bottom: calc(-100vh + 6px);
+}
+
