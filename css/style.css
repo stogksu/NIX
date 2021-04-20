@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 1500px;
+}
+
+.block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.bg-fon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+  background: rgba(0, 0, 0, .1);
+}
+
+.modal {
+  position: absolute;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+form {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 10px;
+  margin: auto;
+  height: 100px;
+  width: 300px;
+  border: 1px dotted red;  /*прописала, чтоб увидеть центрирование формы внутри модального окна*/
+}
+
+.modal img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 15px;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  padding: 5px;
+}
+
