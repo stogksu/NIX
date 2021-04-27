@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin: 30px auto;
+}
+
+h2 {
+    font-size: 24px;
+    background-color: rgb(228, 224, 168);
+    padding: 15px;
+    text-align: center;
+}
+
+/* Task 1*/
+.task-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 150px);
+    justify-content: center;
+}
+
+
+.task-1-item {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    background-color: rgb(110, 110, 223);
+    border: 3px solid blue;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.task-2-item {
+    grid-column: 2/5;
+    grid-row: 2/5;
+    background-color: rgb(241, 96, 217);
+    border: 3px solid red;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    opacity: .8;
+}
+
+/* Task 2*/
+.task-2 {
+    display: grid;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.task-2-item1,
+.task-2-item2,
+.task-2-item3,
+.task-2-item4 {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    column-gap: 10px;
+}
+
+.task-2-item1 {
+    justify-items: end;
+}
+
+.task-2-item2 {
+    justify-items: start;
+}
+
+.task-2-item3 {
+    justify-items: center;
+}
+
+.task-2-item4 {
+    justify-items: stretch;
+}
+
+.item-A, 
+.item-B,
+.item-C {
+    padding: 50px 40px;
+    background-color: rgb(219, 219, 78);
+    border: 1px solid black;
+}
+
+.item-D, 
+.item-E,
+.item-F {
+    padding: 50px 40px;
+    background-color: rgb(235, 141, 206);
+    border: 1px solid black;
+}
+
+.item-G, 
+.item-H,
+.item-I {
+    padding: 50px 40px;
+    background-color: rgb(182, 245, 170);
+    border: 1px solid black;
+}
+
+.item-J, 
+.item-K,
+.item-L {
+    padding: 50px 40px;
+    background-color: rgb(150, 171, 238);
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Task 3*/
+.task-3 {
+    display: grid;
+    grid-template: repeat(4, 100px) / repeat(4, 120px);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.task-3 div {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+}
+
+.task-3-item-D {
+    order: -1;
+}
+
+.task-3-item-B {
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+.task-3-item-C {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.task-3-item-G {
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+
+.task-3-item-H {
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
+.task-3-item-D,
+.task-3-item-C {
+    background-color: orange;
+}
+
+.task-3-item-B,
+.task-3-item-A {
+    background-color: rgb(236, 125, 212);
+}
+
+.task-3-item-G,
+.task-3-item-H {
+    background-color: rgb(171, 241, 162);
+}
+
+/* Task 4*/
+.task-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.task-4-item {
+    background-color: burlywood;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.task-4-item-A{
+    grid-column: span 2;
+}
+.task-4-item-G {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.task-4-item-K {
+    grid-column: span 3;
+}
+
+/* Task 5 */
+.task-5 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 200px 100px 200px 100px;
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+}
+
+.task-5-item {
+    background-color: #353432ab;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.task-5-item-A {
+    grid-column: 1/3;
+}
+
+.task-5-item-B {
+    grid-column: 4/5;
+}
+
+.task-5-item-C {
+    grid-column: 1;
+    grid-row: 2/4;
+}
+
+.task-5-item-D {
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+
+.task-5-sub_item {
+    background-color: rgba(240, 235, 226, 0.671);
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+
+.task-5-item-E {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.task-5-item-F {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.task-5-item-G {
+    grid-column: 3;
+    grid-row: 2;
+}
