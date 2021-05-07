@@ -1,0 +1,51 @@
+.row .item,
+.row .block {
+    padding: 30px 20px;
+    font-size: 36px;
+}
+
+.item-1-1 {
+    background-color: blue;
+}
+
+.item-1-2 {
+    background-color: burlywood;
+}
+
+.item-1-3 {
+    background-color: coral;
+}
+
+.item-2-1 {
+    background-color: rgb(154, 235, 238);
+}
+
+.item-2-2 {
+    background-color: rgb(238, 199, 154);
+}
+
+.block-2-1 {
+    background-color: darkgoldenrod;
+}
+
+.block-2-2 {
+    background-color: rgb(226, 100, 188);
+}
+
+.item-3-1 {
+    background-color: darksalmon;
+}
+
+.item-3-2 {
+    background-color: deeppink;
+}
+
+.item-3-3 {
+    background-color:grey;
+}
+
+@media (max-width:  575px) {
+    .item-3-1 {
+        visibility: hidden;
+    }
+}

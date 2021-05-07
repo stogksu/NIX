@@ -1,0 +1,180 @@
+body
+    color: $content-color
+    font-family: $font-family-content
+    font-size: 14px
+
+.nav-link
+    font-size: 18px
+    text-transform: uppercase
+    font-family: $font-family-title
+    font-weight: 400
+
+.promo
+    background: url(../image/bg_promo.jpg) center top/cover no-repeat
+    padding: 150px 0
+    &__item
+        padding: 30px 10px 30px
+        background-color: #fff
+        box-shadow: 0 0 5px #000
+        text-align: center
+    &__sub-title
+        font-family: $font-family-title
+        font-size: 18px
+        margin-bottom: 30px
+        color: #dbb171
+    &__title
+        font-family: $font-family-title
+        font-size: 24px
+        margin-bottom: 30px
+        color: $main-color
+    &__descr
+        font-family: $font-family-content
+        font-size: 16px
+        font-style: italic
+
+.services,
+.about-me,
+.contacts
+    padding: 30px 0
+
+h2
+    font-family: $font-family-title
+    font-size: 36px
+    text-transform: uppercase
+    color: $main-color
+    text-align: center
+    position: relative
+    &::after
+        content: ''
+        display: inline-block
+        height: 2px
+        width: 80px
+        background-color: $main-color
+        position: absolute
+        bottom: -10px
+        left: 50%
+        transform: translateX(-50%)
+
+h3
+    font-family: $font-family-title
+    font-size: 18px
+    text-transform: uppercase
+    color: $main-color
+    text-align: center
+
+h5
+    font-family: $content-color
+    font-size: 18px
+    text-transform: uppercase
+    color: $main-color
+
+.carousel
+    margin: 30px 0
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon
+        width: 40px
+        height: 40px
+    &-item
+        position: relative
+        &::after
+            content: 'Свадебная фотосессия'
+            position: absolute
+            top: 0
+            display: inline-block
+            width: 100%
+            padding: 15px 10px
+            text-align: center
+            background-color: rgba(255, 255, 255, .5)
+            text-transform: uppercase
+            color: #000
+            font-size: 24px
+        &-wedding::after
+            content: 'Свадебная фотосессия'
+        &-love::after
+            content: 'Love Story'
+        &-family::after
+            content: 'Семейные & детские'
+        &-portrait::after
+            content: 'Портретная съемка'
+        &-food::after
+            content: 'Предметная съемка'
+            
+.services-item
+    padding: 20px 15px
+        
+.about-me
+    background-color: #fdfbfb
+    &-item
+        margin-top: 30px
+    &__photo
+        width: 100%
+    &__list
+        list-style-type: none
+        font-size: 16px
+        padding: 0
+        li
+            padding: 5px 0
+            display: flex
+            align-items: center
+            i
+                margin-right: 10px
+                font-size: 24px
+                color: green
+
+.contacts
+    .contacts-item
+        margin-top: 30px
+        padding: 15px 0
+    .contacts-info
+        padding: 10px 0
+        img
+            border-radius: 50%
+    form
+        padding: 30px 15px
+        border-radius: 10px
+        box-shadow: 0 0 2px #6c757d
+        label
+            font-size: 16px
+            color: $main-color
+        button[type="submit"]:focus ~.modal
+            display: block
+            background: rgba(0, 0, 0, .5)
+
+.contacts-info
+    img
+        margin-bottom: 20px
+    p
+        font-size: 16px
+        color: $main-color
+        margin-bottom: 10px
+    .social-link
+        a
+            margin-right: 20px
+            font-size: 30px
+
+.present
+    background-color: #f5e7d1
+    text-align: center
+    position: relative
+    .alert
+        display: none
+        position: absolute
+        top: -50%
+        left: 50%
+        transform: translateX(-50%)
+        padding: 30px
+    .present-title
+        padding: 30px
+        font-size: 32px
+        cursor: pointer
+    .present-title:hover ~.alert
+        display: block
+    .alert:hover
+        display: block
+
+.footer
+    padding: 20px 0
+    background-color: #2c2c2c
+    color: $main-color
+    
+    
