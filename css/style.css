@@ -1,14 +1,10 @@
-@charset "UTF-8";
 body {
-  color: #161616;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
 }
 
 .nav-link {
   font-size: 18px;
   text-transform: uppercase;
-  font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
 }
 
@@ -17,128 +13,47 @@ body {
   padding: 150px 0;
 }
 .promo__item {
-  padding: 30px 10px 30px;
-  background-color: #fff;
   box-shadow: 0 0 5px #000;
-  text-align: center;
 }
 .promo__sub-title {
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
   margin-bottom: 30px;
   color: #dbb171;
 }
 .promo__title {
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 24px;
   margin-bottom: 30px;
-  color: #666666;
 }
 .promo__descr {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: italic;
 }
 
-.services,
-.about-me,
-.contacts {
-  padding: 30px 0;
-}
-
 h2 {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 36px;
   text-transform: uppercase;
-  color: #666666;
   text-align: center;
   position: relative;
+  color: #343a40;
 }
 h2::after {
   content: "";
   display: inline-block;
   height: 2px;
   width: 80px;
-  background-color: #666666;
   position: absolute;
   bottom: -10px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  background-color: #343a40;
 }
 
-h3 {
-  font-family: "Noto Sans JP", sans-serif;
+h3, h5 {
   font-size: 18px;
   text-transform: uppercase;
-  color: #666666;
   text-align: center;
 }
 
-h5 {
-  font-family: #161616;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #666666;
-}
-
-.carousel {
-  margin: 30px 0;
-}
-.carousel .carousel-control-next-icon,
-.carousel .carousel-control-prev-icon {
-  width: 40px;
-  height: 40px;
-}
-.carousel-item {
-  position: relative;
-}
-.carousel-item::after {
-  content: "Свадебная фотосессия";
-  position: absolute;
-  top: 0;
-  display: inline-block;
-  width: 100%;
-  padding: 15px 10px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
-  color: #000;
-  font-size: 24px;
-}
-.carousel-item-wedding::after {
-  content: "Свадебная фотосессия";
-}
-.carousel-item-love::after {
-  content: "Love Story";
-}
-.carousel-item-family::after {
-  content: "Семейные & детские";
-}
-.carousel-item-portrait::after {
-  content: "Портретная съемка";
-}
-.carousel-item-food::after {
-  content: "Предметная съемка";
-}
-
-.services-item {
-  padding: 20px 15px;
-}
-
-.about-me {
-  background-color: #fdfbfb;
-}
-.about-me-item {
-  margin-top: 30px;
-}
-.about-me__photo {
-  width: 100%;
-}
-.about-me__list {
-  list-style-type: none;
-  font-size: 16px;
-  padding: 0;
-}
 .about-me__list li {
   padding: 5px 0;
   display: flex;
@@ -147,39 +62,11 @@ h5 {
 .about-me__list li i {
   margin-right: 10px;
   font-size: 24px;
-  color: green;
+  color: #008000;
 }
 
-.contacts .contacts-item {
-  margin-top: 30px;
-  padding: 15px 0;
-}
-.contacts .contacts-info {
-  padding: 10px 0;
-}
-.contacts .contacts-info img {
-  border-radius: 50%;
-}
-.contacts form {
-  padding: 30px 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 2px #6c757d;
-}
-.contacts form label {
-  font-size: 16px;
-  color: #666666;
-}
-.contacts form button[type=submit]:focus ~ .modal {
-  display: block;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.contacts-info img {
-  margin-bottom: 20px;
-}
 .contacts-info p {
   font-size: 16px;
-  color: #666666;
   margin-bottom: 10px;
 }
 .contacts-info .social-link a {
@@ -188,21 +75,19 @@ h5 {
 }
 
 .present {
-  background-color: #f5e7d1;
   text-align: center;
   position: relative;
 }
 .present .alert {
   display: none;
   position: absolute;
-  top: -50%;
+  bottom: 70%;
   left: 50%;
   transform: translateX(-50%);
   padding: 30px;
 }
 .present .present-title {
-  padding: 30px;
-  font-size: 32px;
+  font-size: 24px;
   cursor: pointer;
 }
 .present .present-title:hover ~ .alert {
@@ -210,46 +95,4 @@ h5 {
 }
 .present .alert:hover {
   display: block;
-}
-
-.footer {
-  padding: 20px 0;
-  background-color: #2c2c2c;
-  color: #666666;
-}
-
-@media (max-width: 992px) {
-  .promo {
-    padding: 50px 0;
-    height: 400px;
-  }
-  .promo__title {
-    font-size: 18px;
-  }
-  .promo__descr {
-    font-size: 12px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  .services,
-.about-me,
-.contacts {
-    padding: 30px 0;
-  }
-}
-@media (max-width: 576px) {
-  .promo {
-    padding: 30px 0;
-  }
-
-  .present {
-    position: relative;
-  }
-  .present .present-title {
-    padding: 15px;
-    font-size: 18px;
-  }
 }

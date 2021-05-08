@@ -1,7 +1,85 @@
-$font-family-title: 'Noto Sans JP', sans-serif
-$font-family-content: 'Roboto', sans-serif
-$main-color: #666666
-$content-color: #161616
+body
+    font-family: 'Roboto', sans-serif
 
-@import "general"
-@import "media"
+.nav-link
+    font-size: 18px
+    text-transform: uppercase
+    font-weight: 400
+
+.promo
+    background: url(../image/bg_promo.jpg) center top/cover no-repeat
+    padding: 150px 0
+    &__item
+        box-shadow: 0 0 5px #000
+    &__sub-title
+        font-size: 18px
+        margin-bottom: 30px
+        color: #dbb171
+    &__title
+        font-size: 24px
+        margin-bottom: 30px
+    &__descr
+        font-size: 16px
+        font-style: italic
+
+h2
+    text-transform: uppercase
+    text-align: center
+    position: relative
+    color: #343a40
+    &::after
+        content: ''
+        display: inline-block
+        height: 2px
+        width: 80px
+        position: absolute
+        bottom: -10px
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        background-color: #343a40
+h3, h5
+    font-size: 18px
+    text-transform: uppercase
+    text-align: center
+
+.about-me
+    &__list
+        li
+            padding: 5px 0
+            display: flex
+            align-items: center
+            i
+                margin-right: 10px
+                font-size: 24px
+                color: #008000
+
+.contacts-info
+    p
+        font-size: 16px
+        margin-bottom: 10px
+    .social-link
+        a
+            margin-right: 20px
+            font-size: 30px
+
+.present
+    text-align: center
+    position: relative
+    .alert
+        display: none
+        position: absolute
+        bottom: 70%
+        left: 50%
+        transform: translateX(-50%)
+        padding: 30px
+    .present-title
+        font-size: 24px
+        cursor: pointer
+    .present-title:hover ~.alert
+        display: block
+    .alert:hover
+        display: block
+
+    
+    
