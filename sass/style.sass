@@ -22,22 +22,6 @@ body
         font-size: 16px
         font-style: italic
 
-h2
-    text-transform: uppercase
-    text-align: center
-    position: relative
-    color: #343a40
-    &::after
-        content: ''
-        display: inline-block
-        height: 2px
-        width: 80px
-        position: absolute
-        bottom: -10px
-        bottom: 0
-        left: 50%
-        transform: translateX(-50%)
-        background-color: #343a40
 h3, h5
     font-size: 18px
     text-transform: uppercase
@@ -81,5 +65,47 @@ h3, h5
     .alert:hover
         display: block
 
+h2
+    text-transform: uppercase
+    text-align: center
+    position: relative
+    &::after
+        content: ''
+        display: inline-block
+        height: 2px
+        width: 80px
+        position: absolute
+        bottom: -10px
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
     
-    
+.light-theme
+    .promo
+        &__item
+            background-color: #fff
+            color: #6c757d
+    section
+        color: #6c757d
+        &:nth-child(2n+1)
+            background-color: #f8f9fa
+    h2
+        color: #343a40
+        &::after
+            background-color: #343a40
+
+.dark-theme
+    .promo
+        &__item
+            background-color: #343a40
+            color: #f8f9fa
+    section
+        background-color: #343a40
+        color: #f8f9fa
+        &:nth-child(2n+1)
+            background-color: #6c757d
+    h2
+        color: #f8f9fa
+        &::after
+            background-color: #f8f9fa
+

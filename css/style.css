@@ -29,25 +29,6 @@ body {
   font-style: italic;
 }
 
-h2 {
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  color: #343a40;
-}
-h2::after {
-  content: "";
-  display: inline-block;
-  height: 2px;
-  width: 80px;
-  position: absolute;
-  bottom: -10px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #343a40;
-}
-
 h3, h5 {
   font-size: 18px;
   text-transform: uppercase;
@@ -95,4 +76,56 @@ h3, h5 {
 }
 .present .alert:hover {
   display: block;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+h2::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 80px;
+  position: absolute;
+  bottom: -10px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.light-theme .promo__item {
+  background-color: #fff;
+  color: #6c757d;
+}
+.light-theme section {
+  color: #6c757d;
+}
+.light-theme section:nth-child(2n+1) {
+  background-color: #f8f9fa;
+}
+.light-theme h2 {
+  color: #343a40;
+}
+.light-theme h2::after {
+  background-color: #343a40;
+}
+
+.dark-theme .promo__item {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+.dark-theme section {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+.dark-theme section:nth-child(2n+1) {
+  background-color: #6c757d;
+}
+.dark-theme h2 {
+  color: #f8f9fa;
+}
+.dark-theme h2::after {
+  background-color: #f8f9fa;
 }
